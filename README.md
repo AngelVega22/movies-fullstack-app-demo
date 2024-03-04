@@ -10,25 +10,34 @@ de cine.
 
 1. [Instalación](#Instalación)
 2. [Uso](#Uso)
-3. [Estructura del Proyecto](#estructura-del-proyecto)
-4. [Ejemplos de Prueba](#ejemplos-de-prueba)
+3. [Ejemplos de Prueba](#ejemplos-de-prueba)
 
 ## Instalación
 ```bash
 npm install
 ```
+
+### En el backend configurar la cadena de conexión y aplicar una migración
+```bash
+migrations add InitialMigration
+```
+
+### Luego actualizar base de datos
+```bash
+database update
+```
 ## Uso
 
+### Front End
 ```bash
 ng serve
 ```
+### Back End
+```bash
+Ejecutar proyecto
+```
+![Movies App](screenshots/movies-app-run-backend.png "Movies App")
 
-## Estructura del Proyecto
-
-/
-|-- MoviesWebApi/
-|-- MoviesWebClient/
-|-- ...
 
 
 ## Ejemplos de prueba
