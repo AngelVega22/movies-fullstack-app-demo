@@ -3,7 +3,7 @@
 Aplicación web que permita ver la cartelera de películas disponibles en las salas
 de cine.
 
-![Movies App](screenshots/movies-app-demo.png "Movies App").
+![Movies App](screenshots/movies-app-demo.png "Movies App")
 
 
 ## Tabla de Contenidos
@@ -58,9 +58,9 @@ ng serve
 ```
 #### 3. Reservar una función de la película seleccionada
 
-![Movies App](screenshots/movies-app-register.png "Movies App").
+![Movies App](screenshots/movies-app-register.png "Movies App")
 
 
 #### 4. Verificar en el Swagger que se reservó correctamente
 
-![Movies App](screenshots/movies-app-reserve.png "Movies App").
+![Movies App](screenshots/movies-app-reserve.png "Movies App")
