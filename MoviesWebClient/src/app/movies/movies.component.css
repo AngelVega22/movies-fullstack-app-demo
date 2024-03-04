@@ -1,0 +1,127 @@
+ .page-title {
+   color: #004a8c;
+   text-align: center;
+   margin-bottom: 20px;
+ }
+
+ .movie-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+
+ .movie-card {
+   position: relative;
+   background-color: #fff;
+   border-radius: 8px;
+   margin: 10px;
+   overflow: hidden;
+   width: 250px;
+   transition: transform 0.3s ease-in-out;
+ }
+
+ .movie-card:hover {
+   transform: scale(1.01);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   opacity: 2.2;
+
+ }
+
+ .play-icon {
+   color: #fff;
+   font-size: 3em;
+ }
+
+ .movie-image {
+   max-width: 100%;
+   height: auto;
+   border-radius: 8px;
+ }
+
+ .movie-details {
+   padding: 10px;
+ }
+
+ .movie-details h2 {
+   color: #333;
+   margin-bottom: 5px;
+ }
+
+ .movie-genre {
+   color: #777;
+   margin-top: 0;
+   font-size: 1em;
+   font-weight: 400;
+ }
+
+ .movie-duration {
+   color: #777;
+   font-size: 1em;
+   font-weight: 400;
+ }
+
+ .details-button {
+   display: inline-block;
+   padding: 5px 20px;
+   margin: 10px;
+   text-decoration: none;
+   background-color: #3498db;
+   color: #fff;
+   border: 1px solid #2980b9;
+   border-radius: 5px;
+   transition: background-color 0.3s ease-in-out;
+ }
+
+ .details-button:hover {
+   background-color: #174c6e;
+   cursor: pointer;
+ }
+
+
+ label {
+   display: block;
+   margin-bottom: 8px;
+   color: #333;
+ }
+
+ /* Estilo para el select */
+ select {
+   width: 100%;
+   padding: 10px;
+   box-sizing: border-box;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   background-color: #fff;
+   color: #333;
+   font-size: 16px;
+   cursor: pointer;
+   transition: border-color 0.3s;
+ }
+
+ /* Estilo para el select cuando está enfocado */
+ select:focus {
+   outline: none;
+   border-color: #3498db;
+   /* Puedes personalizar este color de resaltado */
+ }
+
+ /* Estilo para las opciones del select */
+ option {
+   background-color: #fff;
+   color: #333;
+ }
+
+ /* Estilo para las opciones cuando están hover */
+ option:hover {
+   background-color: #3498db;
+   color: #fff;
+ }
+
+ .filters {
+   gap: 5%;
+   display: flex;
+   margin: auto;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-bottom: 3em;
+ }

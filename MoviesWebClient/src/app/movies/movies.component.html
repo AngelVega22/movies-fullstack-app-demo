@@ -1,0 +1,41 @@
+<h1 class="page-title">Películas</h1>
+
+<section class="filters">
+  <div>
+    <label for="showtimeId">Selecciona un cine:</label>
+    <select formControlName="theater" id="theater" (change)="onTheaterOrGenreChange()">
+      <option value="">Todos los cines</option>
+
+      @for(showtime of showtimes ; track showtime.id){
+      <option value="{{ showtime.theater }}" [value]="showtime.theater">{{ showtime.theater }}</option>
+      }
+    </select>
+  </div>
+  <div>
+    <label for="showtimeId">Selecciona un género:</label>
+    <select formControlName="genre" id="genre" (change)="onTheaterOrGenreChange()">
+      <option value="">Todos los generos</option>
+
+      @for(uniqueMoviesGenre of uniqueMoviesGenres ; track uniqueMoviesGenre.id){
+      <option value="{{ uniqueMoviesGenre }}" [value]="uniqueMoviesGenre">{{uniqueMoviesGenre }}</option>
+      }
+    </select>
+  </div>
+</section>
+<section class="movie-list">
+  @for(moviesShowtime of filteredMoviesShowtimes; track moviesShowtime.id){
+  <div class="movie-card">
+    <div class="movie-overlay">
+      <i class="fas fa-play-circle play-icon"></i>
+    </div>
+    <img src="{{ moviesShowtime.imageURL }}" alt="{{ moviesShowtime.title }}" class="movie-image">
+    <div class="movie-details">
+      <h2>{{ moviesShowtime.title }}
+      </h2>
+      <span class="movie-genre">{{ moviesShowtime.genre }}, </span>
+      <span class="movie-duration">{{ moviesShowtime.duration }} min</span>
+    </div>
+    <button class="details-button" [routerLink]="['/showtime', moviesShowtime.movieID ]">Ver detalles</button>
+  </div>
+  }
+</section>

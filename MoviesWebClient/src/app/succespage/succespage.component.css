@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+}
+
+.success-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.success-message {
+  color: #4CAF50;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.success-image {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}

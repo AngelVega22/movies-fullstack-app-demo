@@ -1,0 +1,13 @@
+<h1 class="page-title">La función perfecta para ti.</h1>
+
+<section class="showtime-list">
+  @for(showtime of showtimes; track showtime.id){
+  <div class="showtime-card">
+    <span class="showtime-info">{{ showtime.startTime | date: 'dd/MM/yyyy HH:mm' }} - {{ showtime.endTime | date:
+      'HH:mm'
+      }}</span>
+    <span class="showtime-info">Theater: {{ showtime.theater }}</span>
+    <span class="showtime-info">Available Seats: {{ showtime.availableSeats }}</span>
+    <button class="reserve-button" [routerLink]="['/reservation', showtime.showtimeID ]">Reservar</button>
+  </div>
+  }

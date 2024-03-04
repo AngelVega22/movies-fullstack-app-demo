@@ -1,0 +1,47 @@
+.page-title {
+  color: #004a8c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* reservation-form.component.css */
+
+form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #174c6e;
+  cursor: pointer;
+}

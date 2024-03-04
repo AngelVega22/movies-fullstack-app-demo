@@ -1,0 +1,32 @@
+<h1 class="page-title">Reservación</h1>
+
+<section>
+  <form [formGroup]="form" (ngSubmit)="register()">
+    <label for="firstName">Nombres:</label>
+    <input type="text" formControlName="firstName" required />
+
+    <label for="lastName">Apellidos:</label>
+    <input type="text" formControlName="lastName" required />
+
+    <label for="dateOfBirth">Fecha de nacimiento:</label>
+    <input type="date" formControlName="dateOfBirth" required />
+
+    <label for="gender">Genero:</label>
+    <select formControlName="gender" required>
+      <option value="male">Masculino</option>
+      <option value="female">Femenino</option>
+      <option value="other">Otro</option>
+    </select>
+
+    <label for="documentType">Tipo de documento:</label>
+    <input type="text" formControlName="documentType" required />
+
+    <label for="documentNumber">Numero de documento:</label>
+    <input type="text" formControlName="documentNumber" required />
+
+
+    <button type="submit">Reservar</button>
+
+  </form>
+
+</section>
